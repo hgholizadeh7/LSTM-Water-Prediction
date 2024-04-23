@@ -264,18 +264,3 @@ static_attributes:
 - carbonate rocks fraction
 
 
-
-# Path to pickle file(s) containing additional data. Each pickle file must contain a dictionary
-# with one key for each well and the value is a time indexed data frame, where each column is a 
-# feature.
-# Convention: If a column is used as static input, the value to use for specific sample should be in
-# same row (datetime) as the target discharge value.
-additional_feature_files:
-
-# columns of the data frame to use as (additional) "static" inputs for each sample. Must be present in
-# the above linked additional feature files. These values will be used as static inputs, but they can evolve over time.
-# Leave empty to not use any.
-evolving_attributes:
-
-# whether to use well id one hot encoding as (additional) static input
-use_well_id_encoding: False
